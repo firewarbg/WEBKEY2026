@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<main>
+    <section id="menu">
+        <h2>Нашето Меню</h2>
+        
+        <div class="pizza-item" data-id="1">
+            <div class="pizza-info">
+                <h3>Маргарита</h3>
+                <p>Доматен сос, моцарела, пресен босилек, зехтин.</p>
+            </div>
+            <div class="pizza-price">9.90</div>
+            <button class="add-to-cart">Добави</button>
+        </div>
+
+        <div class="pizza-item" data-id="2">
+            <div class="pizza-info">
+                <h3>Пеперони</h3>
+                <p>Доматен сос, моцарела, пикантен пеперони салам.</p>
+            </div>
+            <div class="pizza-price">10.90 </div>
+            <button class="add-to-cart">Добави</button>
+        </div>
+
+        <div class="pizza-item" data-id="3">
+            <div class="pizza-info">
+                <h3>Куатро Формаджи</h3>
+                <p>Моцарела, горгонзола, пармезан, ементал.</p>
+            </div>
+            <div class="pizza-price">10.50</div>
+            <button class="add-to-cart">Добави</button>
+        </div>
+
+        <div class="pizza-item" data-id="4">
+            <div class="pizza-info">
+                <h3>Вегетариана</h3>
+                <p>Доматен сос, моцарела, чушки, гъби, маслини, лук.</p>
+            </div>
+            <div class="pizza-price">11.50</div>
+            <button class="add-to-cart">Добави</button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Вашата Поръчка</h2>
+        <p id="empty-cart-msg">Количката ви е празна.</p>
+        <ul id="cart-items">
+            </ul>
+        <div id="cart-total-container" style="display: none;">
+            Общо: <span id="cart-total">0.00</span> лв.
+        </div>
+    </section>
+
+    <section id="checkout">
+        <h2>Данни за Доставка</h2>
+        <form id="order-form">
+            <label for="name">Име и Фамилия:</label>
+            <input type="text" id="name" name="name" required placeholder="напр. Иван Иванов">
+
+            <label for="address">Адрес за доставка:</label>
+            <textarea id="address" name="address" required placeholder="напр. ул. Театър 5, ап. 3"></textarea>
+
+            <label for="phone">Телефон за връзка:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="напр. 0888 123 456">
+
+            <button type="submit" id="place-order-llll" disabled>Поръчай</button>
+        </form>
+    </section>
+</main>
+</head>
