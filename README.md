@@ -1,3 +1,1 @@
-Курсова работа :) На станислав и georgi ,nikola  moje oshte hora mai nz  
-sait za dostavka na hrana mi e  ideqta
-Nikolaaaa
+Курсова работа :) На станислав и Георги,Руслан,Никола,Антон може би ? 
