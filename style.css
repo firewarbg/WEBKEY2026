@@ -1,7 +1,184 @@
-body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f4f4; }
-nav { background: #e74c3c; color: white; display: flex; justify-content: space-between; padding: 1rem 2rem; align-items: center; }
-nav ul { list-style: none; display: flex; gap: 20px; }
-nav a { color: white; text-decoration: none; font-weight: bold; }
-header { text-align: center; padding: 50px; background: white; margin-bottom: 20px; }
-.card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin: 10px; width: 250px; display: inline-block; }
-button { background: #27ae60; color: white; border: none; padding: 10px; cursor: pointer; border-radius: 5px; }
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #e74c3c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-weight: 300;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            flex: 1 1 300px; /* Позволява на секциите да се разширяват и свиват */
+        }
+
+        /* Меню секция */
+        #menu h2, #cart h2, #checkout h2 {
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+            color: #e74c3c;
+        }
+
+        .pizza-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .pizza-info h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .pizza-info p {
+            margin: 5px 0 0;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .pizza-price {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+
+        .add-to-cart {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background-color: #219150;
+        }
+
+        /* Количка секция */
+        #cart ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #cart-items li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        #cart-items li span.item-total {
+            font-weight: bold;
+        }
+
+        .remove-item {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 0.8em;
+            margin-left: 10px;
+        }
+
+        #cart-total-container {
+            margin-top: 20px;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: right;
+            border-top: 2px solid #e74c3c;
+            padding-top: 10px;
+        }
+
+        #cart-total {
+            color: #e74c3c;
+        }
+
+        /* Checkout секция */
+        #checkout form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #checkout label {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        #checkout input, #checkout textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        #checkout textarea {
+            resize: vertical;
+            height: 80px;
+        }
+
+        #place-order {
+            margin-top: 25px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #place-order:hover {
+            background-color: #c0392b;
+        }
+
+        #checkout button[disabled] {
+            background-color: #bdc3c7;
+            cursor: not-allowed;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #34495e;
+            color: white;
+            margin-top: 30px;
+        }
+        
