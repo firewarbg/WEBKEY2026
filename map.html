@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Случайна Пицария - Стара Загора</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 30px;
+            background-color: #f9f9f9;
+        }
+        /* Размерите на картата трябва да бъдат зададени предварително, за да се визуализира */
+        #map {
+            height: 500px;
+            width: 80%;
+            max-width: 900px;
+            margin: 0 auto;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Пицария "Стара Загора"</h1>
+    <p>📍 Адрес: бул. "Цар Симеон Велики" 105, 6000 Стара Загора</p>
+
+    <div id="map"></div>
+
+    <script>
+        // Тази функция се извиква автоматично, когато API-то на Google Maps се зареди
+        function initMap() {
+            // Координати за избрания адрес в Стара Загора
+            const pizzeriaLocation = { lat: 42.4258, lng: 25.6259 };
+
+            // Създаване на картата и центриране върху локацията
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 16,
+                center: pizzeriaLocation,
+            });
+
+            // Добавяне на маркер (червения пин) на съответния адрес
+            const marker = new google.maps.Marker({
+                position: pizzeriaLocation,
+                map: map,
+                title: "Случайна Пицария"
+            });
+        }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+
+</body>
+</html>
