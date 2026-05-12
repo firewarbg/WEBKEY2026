@@ -23,6 +23,3 @@ foodItems.forEach(item => {
 function order(id) {
     alert("Продукт " + id + " е добавен в количката!");
 }
-function order(id) {
-    alert("Продукт " + id + " е добавен в количката!");
-}
