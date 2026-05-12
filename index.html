@@ -22,5 +22,20 @@
 
     <div id="app"></div>
     <script src="script.js"></script>
+    <button id="backToTop" title="Нагоре">↑</button>
+
+<script>
+    const backBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            backBtn.style.display = 'block';
+        } else {
+            backBtn.style.display = 'none';
+        }
+    });
+    backBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
 </body>
 </html>
